@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "terminal-bench-eval"
+version = "0.1.0"
+description = "A rigorous, sandboxed CLI and OS benchmark harness for evaluating autonomous coding and sysadmin agents."
+authors = [{ name = "Jatin Sihag", email = "clyfergamer@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0.0",
+    "docker>=7.0.0",
+    "click>=8.1.0",
+    "rich>=13.0.0",
+    "pytest>=8.0.0",
+    "litellm>=1.40.0"
+]
+
+[project.scripts]
+terminal-bench = "terminal_bench.cli:main"
