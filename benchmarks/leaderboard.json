@@ -1,0 +1,106 @@
+{
+  "benchmark": "TerminalBench-Eval v1.0",
+  "total_tasks": 8,
+  "leaderboard": [
+    {
+      "rank": 1,
+      "model": "Claude 3.5 Sonnet (20241022)",
+      "pass_at_1": 75.0,
+      "avg_steps": 5.4,
+      "avg_duration_s": 42.1,
+      "cost_per_eval_usd": 0.38,
+      "passed_tasks": [
+        "task_01_corrupt_git_head",
+        "task_02_systemd_socket_deadlock",
+        "task_04_nginx_sni_reverse_proxy",
+        "task_05_sqlite_wal_checkpoint_lock",
+        "task_06_docker_layer_cache_bust",
+        "task_07_cron_path_env_isolation"
+      ],
+      "failed_tasks": [
+        "task_03_python_c_extension_abi",
+        "task_08_dns_search_domain_leak"
+      ]
+    },
+    {
+      "rank": 2,
+      "model": "GPT-4o (2024-08-06)",
+      "pass_at_1": 62.5,
+      "avg_steps": 6.8,
+      "avg_duration_s": 48.7,
+      "cost_per_eval_usd": 0.29,
+      "passed_tasks": [
+        "task_01_corrupt_git_head",
+        "task_02_systemd_socket_deadlock",
+        "task_05_sqlite_wal_checkpoint_lock",
+        "task_06_docker_layer_cache_bust",
+        "task_07_cron_path_env_isolation"
+      ],
+      "failed_tasks": [
+        "task_03_python_c_extension_abi",
+        "task_04_nginx_sni_reverse_proxy",
+        "task_08_dns_search_domain_leak"
+      ]
+    },
+    {
+      "rank": 3,
+      "model": "DeepSeek-V3",
+      "pass_at_1": 62.5,
+      "avg_steps": 7.1,
+      "avg_duration_s": 54.2,
+      "cost_per_eval_usd": 0.08,
+      "passed_tasks": [
+        "task_01_corrupt_git_head",
+        "task_04_nginx_sni_reverse_proxy",
+        "task_05_sqlite_wal_checkpoint_lock",
+        "task_06_docker_layer_cache_bust",
+        "task_07_cron_path_env_isolation"
+      ],
+      "failed_tasks": [
+        "task_02_systemd_socket_deadlock",
+        "task_03_python_c_extension_abi",
+        "task_08_dns_search_domain_leak"
+      ]
+    },
+    {
+      "rank": 4,
+      "model": "Gemini 1.5 Pro",
+      "pass_at_1": 50.0,
+      "avg_steps": 8.0,
+      "avg_duration_s": 61.0,
+      "cost_per_eval_usd": 0.22,
+      "passed_tasks": [
+        "task_01_corrupt_git_head",
+        "task_05_sqlite_wal_checkpoint_lock",
+        "task_06_docker_layer_cache_bust",
+        "task_07_cron_path_env_isolation"
+      ],
+      "failed_tasks": [
+        "task_02_systemd_socket_deadlock",
+        "task_03_python_c_extension_abi",
+        "task_04_nginx_sni_reverse_proxy",
+        "task_08_dns_search_domain_leak"
+      ]
+    },
+    {
+      "rank": 5,
+      "model": "Llama-3.1-70B-Instruct",
+      "pass_at_1": 37.5,
+      "avg_steps": 9.5,
+      "avg_duration_s": 75.3,
+      "cost_per_eval_usd": 0.12,
+      "passed_tasks": [
+        "task_01_corrupt_git_head",
+        "task_06_docker_layer_cache_bust",
+        "task_07_cron_path_env_isolation"
+      ],
+      "failed_tasks": [
+        "task_02_systemd_socket_deadlock",
+        "task_03_python_c_extension_abi",
+        "task_04_nginx_sni_reverse_proxy",
+        "task_05_sqlite_wal_checkpoint_lock",
+        "task_08_dns_search_domain_leak"
+      ]
+    }
+  ]
+}
